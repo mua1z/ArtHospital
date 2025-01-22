@@ -1,0 +1,367 @@
+* {
+    /* Change your font family */
+    font-family: sans-serif;
+    
+}
+h2 {
+
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-align: left;
+
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+
+
+
+
+ body{
+    width: 100%;
+    background: linear-gradient(to top, rgba(93, 93, 93, 0.3)50%,rgba(99, 93, 93, 0.3)50%),url(../../../image/doc.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+ }
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #faafaf;
+}
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: #eed7d7;
+}
+
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.srch{
+    
+    position:absolute;
+  right: 40%;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
+
+}
+.doctor{
+    width: 20%;
+    font-size: 35px;
+    border-color: #009879;
+    color:yellow
+    
+}
+.acc{
+    width: 25%;
+}
+
+.container{
+    width: 90%;
+    position: relative;
+    left: 10dvb;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftcont{
+    width: 80%;
+
+    height: fit-content;
+    margin-right: 1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+   
+}
+.container .leftcont h2{
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline rgb(196, 194, 194);
+  
+}
+
+.srch{
+    position: relative;
+    height: 10%;
+
+    width: fit-content;
+    left:5%;
+ 
+}
+.popup{
+    position: relative;
+    top: 30%;
+    height: fit-content;
+    display: none;
+}
+
+.rightcont{
+    width: 20%;
+
+    height: fit-content;
+    margin-right: 1px;
+    float: right;
+    position: relative;
+   
+    height: 400px;
+    
+}
+
+.rightcont button{
+    color: #009879;
+    background: none;
+    
+    font-family: "montserrat" sans-serif;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition:  color 0.4s linear;
+    color: white;
+    position: relative;
+    top: 10dvb;
+    left: 3vb;
+    border: none;
+    }
+
+    button:hover{
+        color: #9f4b4b;
+    }
+    .rightcont button::before{
+      content: ""; 
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      background:#009879;
+      z-index: -1;
+      transition:0.5s ;
+      
+    }
+
+    .content-table2 {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        /* Remove border radius and box-shadow */
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; */
+      }
+      
+      .content-table2 thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      .content-table2 th, .content-table2 td {
+        padding: 5px 5px; /* Adjust padding to match .content-table3 */
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      
+      .ellipsis {
+        width: fit-content;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .content-table2 tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+      
+      .content-table2 tbody tr:nth-of-type(even) {
+        background-color: #faafaf;
+      }
+      
+      .content-table2 tbody tr:nth-of-type(odd) {
+        background-color: #eed7d7; /* Use #eed7d7 for odd rows */
+      }
+      
+      .content-table2 tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .content-table2 tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+      
+      .content-table2 td {
+        word-break: break-all; /* Allow long words to wrap */
+        /* Optional: Add ellipsis for long content */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+
+      .content-table3 {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        display: none;
+        /* Remove border radius and box-shadow */
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; */
+      }
+      .content-table3 h2{
+        color: hsl(0, 0%, 100%);
+        text-decoration: underline rgb(196, 194, 194);
+        text-align: left;
+    }
+      
+      .content-table3 thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+      
+      .content-table3 th, .content-table3 td {
+        padding: 5px 5px; /* Adjust padding to match .content-table3 */
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      
+      .ellipsis {
+        width: fit-content;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .content-table3 tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+      
+      .content-table3 tbody tr:nth-of-type(even) {
+        background-color: #faafaf;
+      }
+      
+      .content-table3 tbody tr:nth-of-type(odd) {
+        background-color: #eed7d7; /* Use #eed7d7 for odd rows */
+      }
+      
+      .content-table3 tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+      
+      .content-table3 tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
+      }
+      
+      .content-table3 td {
+        word-break: break-all; /* Allow long words to wrap */
+        /* Optional: Add ellipsis for long content */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+        /* Add your CSS styles here if needed */
+        .active-row {
+            background-color: #f5f5f5;
+        }
+       #popup4{
+            display: none;
+        }
+        .header{
+          background:transparent;
+          backdrop-filter: 20px;
+          border: 1px solid;
+        
+        }
+
+
+      .content-table4 th,
+.content-table4 td {
+    padding: 5px 5px;
+}
+
+.content-table4 tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table4 tbody tr:nth-of-type(even) {
+    background-color: #faafaf;
+}
+.content-table4 tbody tr:nth-of-type(odd) {
+    background-color: #eed7d7;
+}
+
+
+.content-table4 tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table4 tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.content-table4 thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+.content-table4 h2{
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline rgb(196, 194, 194);
+    text-align: left;
+}
+        /* Add your CSS styles here if needed */
+        .active-row {
+            background-color: #f5f5f5;
+        }
+  
+
+        

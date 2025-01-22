@@ -1,0 +1,115 @@
+/* General Reset */
+
+
+
+
+
+/* Image Container */
+.ime {
+    width: 60%; /* Makes the container take up the full width of its parent */
+    text-align: left; /* Centers the image inside the container */
+    padding: 10px; /* Adds padding around the image */
+}
+
+/* Image Styling */
+.ime img {
+    width: 100%;      /* Makes the image responsive and takes up full container width */
+    max-width: 100%;   /* Ensures the image won't exceed the container width */
+    height: auto;      /* Maintains the image's aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .ime {
+        padding: 5px; /* Adjusts padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .ime {
+        padding: 0; /* Removes padding on extra small screens */
+    }
+}
+
+
+/* General shared styles */
+ .container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(50px); /* Initial vertical offset for animation */
+    transition: all 0.8s ease-in-out; /* Smooth animation */
+}
+
+.container.animate {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Reset vertical offset */
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        padding: 30px;
+    }
+
+    .text {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+}
+
+/* Specific About and Room styles */
+.about-container {
+    background-color: #f4f8fb;
+}
+
+.rooms-container {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,150 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("photo.jpg");
+}
+
+/* Header Styling */
+.header {
+    background-color: #009879;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main Container Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in animation for the container */
+    background-color: #f4f4f4;
+    font-size: smaller;
+
+}
+
+/* Left Column Styling */
+.left-column {
+    width: 60%;
+}
+
+/* Section Styling (for forms and other sections) */
+.section {
+    background-color: #f4f4f4;
+   
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header Styling */
+.section-header h2 {
+    margin-bottom: 20px;
+}
+
+/* Input, Select, Button Styling */
+.section input, .section select, .section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #009879;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #00775f;
+}
+
+/* Right Column Styling */
+.right-column {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* Profile Image Styling for Right Column */
+.profile-img-right {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeInRight 1s forwards 0.5s; /* Fade-in animation for right image */
+}
+
+/* Profile Section */
+.profile-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Patient Info Styling */
+.patient-info h3 {
+    margin: 10px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .right-column img {
+        width: 80%;
+    }
+}

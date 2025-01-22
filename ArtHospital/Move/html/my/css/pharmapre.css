@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the form on the page */
+.pharm {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form legend */
+.ff legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the form labels and inputs */
+.ff label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ff input,
+.ff select,
+.ff textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the form buttons */
+.ff input[type="submit"],
+.ff input[type="reset"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.ff input[type="reset"] {
+    background-color: #f44336;
+}
+
+.ff input[type="submit"]:hover,
+.ff input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    .pharm {
+        margin: 20px;
+    }
+}
+/* Add a back-to-main-page link */
+.back-link {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.back-link:hover {
+    background-color: #2980b9;
+}

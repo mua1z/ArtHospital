@@ -1,0 +1,107 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background: url(/image/history.jpg) center/cover fixed no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Adjust text color for better visibility */
+}
+
+/* Center the form on the page */
+.medical-history-form {
+    max-width: 500px; /* Adjusted max-width for better layout */
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency and use a darker color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Clear the float */
+}
+
+/* Style the form legend */
+.form-fieldset legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style the form labels and inputs */
+.form-fieldset label {
+    display: block;
+    margin-bottom: 15px;
+    color: #fff; /* Adjust text color for better visibility */
+}
+
+/* Create two columns for the form elements */
+.form-fieldset label {
+    width: 100%; /* Adjusted width for better layout */
+    float: left;
+}
+
+/* Clear the float for every 2 elements (each row) */
+.form-fieldset label:nth-child(2n+1) {
+    clear: left;
+}
+
+/* Adjust the margin between the columns */
+.form-fieldset label:nth-child(odd) {
+    margin-right: 0; /* No margin for 100% width elements */
+}
+
+.form-fieldset input,
+.form-fieldset select,
+.form-fieldset textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333; /* Adjust text color for better visibility */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value for transparency */
+}
+
+/* Style the form buttons */
+.form-buttons {
+    clear: both; /* Clear the float to ensure proper layout for buttons */
+    margin-top: 20px; /* Add some space between the form elements and buttons */
+}
+
+.form-buttons input[type="submit"],
+.form-buttons input[type="reset"] {
+    width: 40%; /* Adjusted width for better layout */
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.form-buttons input[type="reset"] {
+    width: 40%; /* Adjusted width for better layout */
+    background-color: #e74c3c;
+}
+
+.form-buttons input[type="submit"]:hover,
+.form-buttons input[type="reset"]:hover {
+    background-color: #2980b9;
+}
+.back-link {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.back-link:hover {
+    background-color: #2980b9;
+}

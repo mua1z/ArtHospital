@@ -1,0 +1,239 @@
+
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+  }
+  .header .logout a{
+     float: right;
+     font-size: 21px;
+     color: #dad70d;
+     text-decoration: none;
+     margin-top: -175px;
+  }
+  .header {
+    padding: 80px;
+    text-align: center;
+    background: #08886e;
+    color: white;
+  }
+  
+  .header h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  a h2{
+    text-align: center;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.13);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    text-align:center;
+    text-decoration-line:none;
+  }
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-left: 100px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    height: 500px;
+    color: rgb(29, 29, 165);
+
+  }
+
+  .from {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    cursor: pointer;
+    background-color: #a8af4c;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .from:hover {
+    background-color: #f8d53c;
+  }
+  
+  .from:active {
+    background-color: #fc9b1c;
+  }
+ .from a{
+    text-decoration: none;
+    color: white;
+ }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;}
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  .row {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+  }
+  @media screen and (max-width: 700px) {
+    .row {   
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+ 
+    }
+  }
+  
+      .fa {
+        padding: 50px;
+        font-size: 30px;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px 50px;
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
+      
+      
+    #formbody
+    {
+      background-image: url(./images/doctor2.jpg);
+      background-position-x:50%;
+      background-position-y:50% ;
+
+    }
+      
+.clinicf{
+	width: 450px;
+	font-size: 16px;
+	background: #f3f4f5;
+  margin:auto;
+	padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E;
+
+  
+}
+.clinicf input[type=submit],
+.clinicf input[type=button],
+.clinicf input[type=text],
+.clinicf input[type=tel],
+.clinicf input[type=email],
+.clinicf textarea,
+.clinicf label
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: rgb(17, 1, 1);
+
+}
+.clinicf input[type=tel]
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #394D61;
+
+}
+.clinicf label {
+	display:block;
+	margin-bottom: 10px;
+}
+.clinicf label > span{
+	display: inline-block;
+	width: 150px;
+}
+.clinicf input[type=text],
+.clinicf input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+.clinicf textarea{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	overflow: hidden;
+	resize:none;
+	height:20px;
+}
+
+.clinicf textarea:focus, 
+.clinicf input[type=text]:focus,
+clinicf input[type=tel]:focus,
+.clinicf input[type=email]:focus,
+.clinicf input[type=email] :focus
+{
+	border-bottom: 1px dashed #D9FFA9;
+}
+
+.clinicf input[type=submit],
+.clinicf input[type=button]{
+	background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #A8BACE;
+}
+.clinicf input[type=submit]:hover,
+.clinicf input[type=button]:hover{
+background: #394D61;
+}
+clinicf input[type=button]:hover,
+.clinicf input[name=home]:hover{
+  background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #0000;
+  text-align: center;
+ 
+}
+#myform1{
+  display:none;
+  margin:auto;
+  background-color:#A8BACE
+}
+p#demo{
+  color: #000
+}
+
+      
+      
+  

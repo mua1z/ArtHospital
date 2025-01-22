@@ -1,0 +1,145 @@
+.main {
+    background: linear-gradient(to top, rgba(33, 33, 33, 0.5) 70%, rgba(33, 33, 33, 0.5) 70%), url(/image/piv8.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    font-size: large;
+    width: 300px;
+    height: 50px;
+    margin-top: -20px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: Arial;
+    color: aquamarine;
+}
+
+.btn {
+    width: 150px;
+    padding: 4px 8px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 150px;
+    font-size: larger;
+    cursor: pointer;
+    font-family: sans-serif;
+    height: 50px;
+    color: rgb(208, 133, 34);
+}
+
+.data {
+    float: right;
+    margin-top: 250px;
+    margin-right: -125px;
+    background-color: aliceblue;
+    height: 50px;
+    width: 250px;
+    font-size: larger;
+}
+
+#vertical-line {
+    border-left: 5px solid rgba(32, 63, 239, 0.959);
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: 450px;
+    top: 110px;
+}
+
+.bt {
+    width: 150px;
+    padding: 4px 8px;
+    float: right;
+    margin-right: -150px;
+    margin-top: 200px;
+    font-size: larger;
+    cursor: pointer;
+    font-family: sans-serif;
+    height: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.popup {
+    position: absolute;
+    top: -150%;
+    left: 65%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px;
+    border-radius: 12px;
+    transition: top 200ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 20ms ease-in-out 0ms;
+}
+
+.popup .close-btn {
+    position: absolute;
+    top:20px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h2 {
+    text-align: center;
+    color: #333;
+    margin: 10px 0 20px;
+    font-size: 23px;
+}
+
+.popup .form .form-element {
+    margin: 15px 0px;
+}
+
+.popup .form .form-element label {
+    font-size: 14px;
+    color: #222;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+    margin: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.popup .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}

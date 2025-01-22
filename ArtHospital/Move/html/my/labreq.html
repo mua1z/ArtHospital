@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Labratory test</title>
+    <link rel="stylesheet" href="css/labreq.css" />
+  </head>
+  <body>
+    <a href="Doctor_dashboard.php" class="back-link">Back to Main Page</a>
+    <form class="lab" action="lab_request.php" method="post">
+      <fieldset class="fff">
+        <legend>laboratory</legend>
+
+        <label for="patient_name"
+          >PATIENT NAME:
+          <input type="text" id="patient_name" name="patient_name" />
+        </label>
+        <label for="sex"
+          >SEX:
+          <select name="sex" id="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select> </label
+        ><br />
+        <lebel for="age"
+          >AGE:
+          <input type="number" name="age" id="age" />
+        </lebel>
+        <br />
+        <label for="Idnumber"
+          >ID no
+          <input type="text" name="Idnumber" id="Idnumber" /> </label
+        ><br /><br /><br />
+        <hr />
+
+        <div class="tst">
+          <h4 style="text-align: center; margin-top: 7px">TESTS</h4>
+          <br />
+          <div class="check">
+            <div class="one">
+              <label for="Bf">
+                BF:&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+              <input type="checkbox" name="tests" id="Bf" value="Bf" />
+
+              <label for="stool">stool:</label>
+              <input type="checkbox" name="stool" id="stool" />
+            </div>
+
+            <div class="two">
+              <label for="widal">widal test:</label>
+              <input type="checkbox" name="widal" id="widal" />
+
+              <label for="w/f">w/f:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <input type="checkbox" name="wf" id="w/f" />
+            </div>
+
+            <div class="three">
+              <label for="h.plory">h.plory test:</label>
+              <input type="checkbox" name="h.plory" id="h.plory" />
+
+              <label for="hcg">hcg:</label>
+              <input type="checkbox" name="hcg" id="hcg" />
+            </div>
+
+            <div class="four">
+              <label for="BFS/RBS">BFS/RBS&nbsp;&nbsp;&nbsp;</label>
+              <input type="checkbox" name="BFS/RBS" id="BFS/RBS" />
+              <label for="U/A">U/A:</label>
+              <input type="checkbox" name="U/A" id="U/A" />
+            </div>
+          </div>
+
+          <label for="others"
+            >others:
+            <input type="text" name="others" id="others" /> </label
+          ><br />
+          <input type="submit" name="submit" value="send" />
+          <input type="reset" name="reset" value="clear" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

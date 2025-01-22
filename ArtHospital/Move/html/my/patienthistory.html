@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History Form</title>
+    <link rel="stylesheet" href="css/patienthistory.css"> 
+</head>
+<body>
+<a href="Doctor_dashboard.php" class="back-link">Back to Main Page</a>
+
+    <form class="medical-history-form" action="Record.php" method="post">
+        <fieldset class="form-fieldset">
+            <legend>Medical History Form</legend>
+
+            <label for="patientName">Patient Name:
+                <input type="text" id="patientName" name="patientName" required/>
+            </label>
+
+            <label for="age">Age:
+                <input type="number" id="age" name="age" required/>
+            </label>
+
+            <label for="cardNo">Card Number:
+                <input type="text" id="cardNo" name="cardNo" required/>
+            </label>
+
+            <label for="sex">Sex:
+                <select name="sex" id="sex" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </label>
+
+            <label for="idNo">ID Number:
+                <input type="text" id="idNo" name="idNo" required/>
+            </label>
+
+            <label for="date">Date:
+                <input type="date" id="date" name="date" required/>
+            </label>
+
+            <label for="department">Department:
+                <input type="text" id="department" name="department" required/>
+            </label>
+
+            <label for="description">Medical History:
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </label>
+
+            <div class="form-buttons">
+                <input type="submit" name="submit" value="Submit"/>
+                <input type="reset" name="reset" value="Clear"/>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

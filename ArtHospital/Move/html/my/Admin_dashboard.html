@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Control</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="head">
+    <h1>Admin Page</h1>
+</div>
+
+<!-- Search Form -->
+<form action="account_control.php" method="GET" class="form1">
+    <input type="text" id="userId" name="userId" placeholder="Search user by Id" required>
+    <input type="submit" value="Search">
+</form>
+
+<div class="cont">
+    <form action="" method="post">
+        <h2>Manage Users</h2>
+
+        <!-- Add User Section -->
+        <h3>Add User</h3>
+        <input type="text" placeholder="First Name" name="fname" required>
+        <input type="text" placeholder="Last Name" name="lname" required>
+        <input type="text" placeholder="Enter your Id" name="id" required>
+        <input type="password" placeholder="Enter your password" name="password" required><br><br>
+
+        <label for="type">Select Type</label>
+        <select name="type" id="type" required>
+            <option value="Doctor">Doctor</option>
+            <option value="Admin">Admin</option>
+            <option value="Pharmacist">Pharmacist</option>
+            <option value="Reception">Reception</option>
+            <option value="Laboratory">Laboratory</option>
+            <option value="Nurse">Nurse</option>
+        </select>
+        <br><br>
+
+        <!-- Delete User Section -->
+        <h3>Delete User</h3>
+        <input type="text" placeholder="Enter User ID to Delete" name="deleteUserId">
+
+        <!-- Reset Password Section -->
+        <h3>Reset Password</h3>
+        <input type="text" placeholder="Enter User ID to Reset Password" name="resetUserId">
+        <input type="password" placeholder="Enter New Password" name="newPassword">
+
+        <br><br>
+        <button class="btn" type="submit" name="submit" value="addUser">
+            Add User
+        </button>
+        <button class="btn" type="submit" name="submit" value="deleteUser">
+            Delete User
+        </button>
+        <button class="btn" type="submit" name="submit" value="resetPassword">
+            Reset Password
+        </button>
+    </form>
+</div>
+
+<script>
+document.querySelector("form").addEventListener("submit", function (event) {
+    const password = document.querySelector("input[name='password']").value;
+    const userId = document.querySelector("input[name='id']").value;
+
+    if (password && password.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        event.preventDefault();
+        return;
+    }
+
+    if (userId && !/^[a-zA-Z0-9]+$/.test(userId)) {
+        alert("User ID must contain only letters and numbers.");
+        event.preventDefault();
+        return;
+    }
+});
+</script>
+
+</body>
+</html>
