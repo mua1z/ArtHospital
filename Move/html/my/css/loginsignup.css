@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+   
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+    position: fixed;
+    top: 0; /* Stick it to the top of the viewport */
+    width: 100%; /* Ensure it spans the full width of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu ul li {
+    margin: 0 10px;
+}
+
+.navbar .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+ 
+
+.navbar .menu ul li a:hover {
+    color: #ffd700;
+}
+
+/*border radius for log in*/
+
+
+ 
+  .navbar .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar .btn-login {
+    background-color: #222; /* Light gray background */
+    color: #fff; /* Dark text */
+  }
+  
+  .navbar .btn-login:hover {
+    background-color: #6666;
+    
+    /* Slightly darker gray */
+  }
+  
+  .navbar .btn-signup {
+    background-color: #444; /* Blue background */
+    color: #fff; /* White text */
+  }
+  
+  .navbar .btn-signup:hover {
+    background-color: #0056b3; /* Darker blue */
+  }
+
+/* Menu Icon */
+.navbar .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #007bff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .navbar .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu ul li {
+        margin: 10px 0;
+    }
+
+    .navbar .menu ul li a {
+        font-size: 18px;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+}
+
+/* Signup Form Styles */
+.signup-form {
+    display: left;
+    align-items: left;
+    background-color: #bec0d1;
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input, .signup-form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #0056b3;
+}
+
+.signup-form p {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.signup-form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    text-decoration: underline;
+}

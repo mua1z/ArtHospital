@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prescription</title>
+    <link rel="stylesheet" href="css/pharmapre.css">
+</head>
+<body>
+   <a href="Doctor_dashboard.php" class="back-link">Back to Main Page</a>
+    
+    <form class="pharm" action="prescription.php" method="post">
+        <fieldset class="ff">
+           <legend>PRESCRIPTION FORM</legend>
+           
+              <label for="patient_name">PATIENT NAME:
+                 <input type="text" id="patient_name" name="patient_name"/>
+              </label><br>
+              <label for="sex">SEX:
+                 <select name="sex" id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                 </select>
+              </label><br>
+              <lebel for="age">AGE:
+              <input type="number" name="age" id="age"/>
+              </lebel>
+              <br>
+              <label for="Idnumber">ID:
+                 <input type="text" name="Idnumber" id="Idnumber"/>
+                 </label><br>
+
+              <label for="prescription" id="lab">PRESCRIPTION:
+                 <textarea type="text" name="prescription" id="prescription"></textarea>
+
+              </label>
+              
+              <br>
+              <input type="submit" name="submit" value="send"/>
+              <input type="reset" name="reset" value="clear"/>
+        </fieldset>
+     </form>
+    
+</body>
+</html>

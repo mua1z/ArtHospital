@@ -1,0 +1,224 @@
+<?php
+
+
+include 'db_con.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="loginform.js"></script>
+    <script src="aboutroom.js"></script>
+    
+</head>
+<body>
+    <div class="horizontal-container">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">ART</h2>
+            </div>
+            <div class="menu-icon">&#9776;</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                    <li><a href="login.php" class="btn btn-login">Log in</a></li>
+                    <li><a href="signup.php" class="btn btn-signup">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="root" id="sec1">
+            <h1>Welcome to Art General Hospital</h1>
+            <p class="par">"Empower your wellness journey with our compassionate care. <br>  We believe in the healing power within you, offering personalized solutions for a healthier, happier life. <br> Your path to vitality starts here, where expertise meets empathy. <br> Discover a clinic that nurtures your well-being, one step at a time."
+            </p>
+        </div>
+
+        <div class="section-2 box" id="sec2">
+            <div class="sec">
+                <h1>Our Service</h1>
+                <div class="service">
+                    <div class="card">
+                        <h2>Hospitality</h2>
+                        <p>"Welcome to our Art clinic, where Hospitality is our priority. We believe in providing more than just medical care. We offer a warm, welcoming environment that contributes to your recovery. Our staff is dedicated to ensuring your comfort and well-being during your stay with us.
+                    </p>
+                    </div>
+                    <div class="card">
+                        <h2>Chamber Services</h2>
+                        <p>Our Services are top-notch, equipped with state-of-the-art facilities for various treatments. We maintain and operate our chambers with the utmost care, ensuring the highest standards of safety and effectiveness</p>
+                        
+                    </div>
+                    <div class="card">
+                        <h2>Emergency Care</h2>
+                        <p>In times of need, our Emergency Care is there for you. Our Emergency Department operates 24/7, equipped to handle a broad spectrum of illnesses and injuries. We prioritize patients based on the severity of their condition to provide immediate attention to those who need it most.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-container">
+            <!-- About Section -->
+            <div class="container about-container">
+                <div class="text about-text animate">
+                    <h1 class="animate">About Us</h1>
+                    <p class="animate">
+                        Welcome to Art Clinic, where healing meets innovation. Nestled in the vibrant city of Dire Dawa, Ethiopia, we are committed to providing exceptional care and support to all our patients.
+                    </p>
+                    <p class="animate">
+                        Our clinic is equipped with the latest medical technology and staffed by compassionate, skilled professionals. We offer a wide range of services, from routine checkups to advanced treatments, all tailored to your unique needs.
+                    </p>
+                    <p class="animate">
+                        At Art Clinic, we believe in the power of personalized care, ensuring every patient feels supported and valued. Discover a place where your health and well-being are our top priorities.
+                    </p>
+                </div>
+                <div class="image about-image" >
+                    <img src="../../image/Art.jpg" alt="Art Clinic Building" class="animate">
+                </div>
+            </div>
+    
+            <!-- Rooms Section -->
+            <div class="container rooms-container">
+                <div class="text rooms-text animate">
+                    <h1 class="animate">Our Hospital Rooms</h1>
+                    <p class="animate">
+                        Our 80 hospital rooms are designed to provide a comfortable and welcoming environment for our patients. We understand that being in the hospital can be a stressful and sometimes scary experience, which is why we have created rooms that promote healing and relaxation.
+                    </p>
+                    <p class="animate">
+                        Our rooms are designed to accommodate different patient needs. All of our rooms are cleaned and sanitized regularly to ensure that they remain sterile and free of germs.
+                    </p>
+                    <p class="animate">
+                        We also offer a range of amenities to make your stay in the hospital as comfortable as possible. Our rooms are equipped with adjustable beds, comfortable seating, and ample space to move around.
+                    </p>
+                </div>
+                <div class="image rooms-image">
+                    <img src="../../image/home.jpg" alt="Hospital Room" class="animate">
+                </div>
+            </div>
+        </div>
+
+    <div class="contact-container" id="contact-us">
+        <h1>Have a Question? Get In Touch</h1>
+        <p>
+            Have a question? Want to book an appointment for yourself or your children?  
+            Give us a call or send an email to contact the Art Clinic.
+        </p>
+        <div class="contact-content">
+            <!-- Left Image -->
+            <div class="contact-image">
+                <img src="../../image/Artabut.jpg" alt="Contact Us Image">
+            </div>
+    
+            <div class="contact-details-form">
+                <!-- General Information -->
+                <div class="contact-details">
+                    <h3>General Information</h3>
+                    <p><strong>Address:</strong> Dire Dawa City, Ethiopia</p>
+                    <p><strong>Phone:</strong> +251 912-345-678</p>
+                    <p><strong>Email:</strong> info@artclinic.com</p>
+                    <h4>Working Hours</h4>
+                    <p>Monday – Sunday: 24hrs</p>
+                </div>
+    
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Enter Your Name*" required>
+                            <input type="email" name="email" placeholder="Enter Your Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="phone" placeholder="Enter Your Phone Number*" required>
+                            <select name="visit-status" required>
+                                <option value="" disabled selected>Have You Visited Us Before?*</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <input type="text" name="subject" placeholder="Subject*" required>
+                        <textarea name="message" rows="4" placeholder="Your Message..." required></textarea>
+                        <button type="submit">Send Your Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <footer>
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section about">
+                    <h2>ART CLINIC</h2>
+                    <p>
+                        Empowering wellness with compassionate care. At Art Clinic, we provide personalized solutions for a healthier, happier life.
+                    </p>
+                </div>
+        
+                <!-- Contact Section -->
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p><strong>Address:</strong> Dire Dawa City, Ethiopia</p>
+                    <p><strong>Phone:</strong> +251 912-345-678</p>
+                    <p><strong>Email:</strong> support@artclinic.com</p>
+                </div>
+        
+                <!-- Quick Links -->
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#sec1">Home</a></li>
+                        <li><a href="#sec2">Service</a></li>
+                        <li><a href="#sec3">About Us</a></li>
+                        <li><a href="#sec4">Contact</a></li>
+                        <li><a href="login.php">Log in</a></li>
+                        <li><a href="signup.php">Sign up</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Social Media -->
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">
+                            <img src="icons/facebook-icon.png" alt="Facebook">
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <img src="icons/twitter-icon.png" alt="Twitter">
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="icons/instagram-icon.png" alt="Instagram">
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <img src="icons/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2024 Iftu Clinic. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+        
+    
+        <script src="menuicon.js">
+            
+        </script>
+
+</body>
+</html>
+
+
+
+
+
