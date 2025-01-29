@@ -1,4 +1,4 @@
-# ArtHospital
+# Art General Hospital Management System
 #Group members          id
 
 Muaz Amin                  1406874
